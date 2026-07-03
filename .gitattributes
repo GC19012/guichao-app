@@ -1,0 +1,1 @@
+ios/Frameworks/Libcore.xcframework/*/Libcore.framework/Libcore filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,120 @@
+name: guichao
+description: GUICHAO - Secure & Private Network Acceleration for Global Users.
+publish_to: "none"
+version: 1.0.3+2026900
+
+environment:
+  sdk: ">=3.3.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  in_app_purchase: ^3.2.3
+  intl: ^0.20.2
+  flutter_riverpod: ^2.6.1
+  flutter_secure_storage: ^10.3.1
+  connectivity_plus: ^7.1.1
+  supabase_flutter: 2.9.1
+  sign_in_with_apple: ^7.0.1
+  fpdart: ^1.1.0
+  synchronized: ^3.3.0+3
+  shared_preferences: ^2.0.15
+  freezed_annotation: 3.1.0
+  json_annotation: ^4.9.0
+  hooks_riverpod: ^2.6.1
+  flutter_hooks: ^0.21.3+1
+  riverpod_annotation: ^2.6.1
+  rxdart: ^0.28.0
+  drift: ^2.28.1
+  sqlite3_flutter_libs: ^0.5.24
+  dio: ^5.4.1
+  cloudflare_turnstile: ^3.5.0
+  path_provider: ^2.1.5
+  app_links: ^6.4.1
+  flutter_native_splash: ^2.3.10
+  package_info_plus: ^8.3.0
+  device_info_plus: ^11.3.0
+  url_launcher: ^6.2.5
+  path: ^1.8.3
+  loggy: ^2.0.3
+  meta: ^1.10.0
+  dartx: ^1.2.0
+  uuid: ^4.5.1
+  watcher: ^1.1.0
+  go_router: ^15.1.3
+  flutter_animate: ^4.5.0
+  flutter_svg: ^2.0.10+1
+  gap: ^3.0.1
+  sliver_tools: ^0.2.12
+  flutter_adaptive_scaffold: ^0.3.3+1
+  sizer: 3.1.3
+  toastification: ^3.0.3
+  dio_smart_retry: ^7.0.1
+  dart_mappable: ^4.2.1
+  crypto: ^3.0.3
+  protobuf: ^4.1.0
+  grpc: ^4.1.0
+  dynamic_color: ^1.7.0
+  pointycastle: ^4.0.0
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+  flutter_local_notifications: ^19.5.0
+  phone_form_field: ^10.0.17
+  umeng_common_sdk: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  freezed: 3.1.0
+  json_serializable: ^6.8.0
+  flutter_gen_runner: ^5.6.0
+  riverpod_generator: ^2.6.1
+  go_router_builder: ^2.9.0
+  dart_mappable_builder: ^4.2.3
+  dependency_validator: ^5.0.2
+  lint: ^2.3.0
+  drift_dev: ^2.28.0
+  flutter_launcher_icons: ^0.14.4
+  source_gen: ^2.0.0
+
+dependency_overrides:
+  drift_dev: ^2.28.0
+  web: ^1.1.1
+  source_gen: ^2.0.0
+  build_runner: ^2.5.4
+  build: ^2.5.0
+  # 锁住 2.4.2：该版本用 CocoaPods，不依赖 objective_c Native Assets
+  # 2.6.0 引入 objective_c 9.x，需要 Flutter Native Assets 编译，在此工程 Xcode 构建中无法正常工作
+  path_provider_foundation: 2.4.2
+  # stub: 用无 SVG 资源的本地包替换 circle_flags，从 bundle 中移除 246 个国旗文件（~984K）
+  circle_flags:
+    path: packages/circle_flags
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/gch_pics/
+    - assets/certs/ca.crt
+    - assets/gch_pics/gch_brand/
+    - assets/gch_pics/gch_pay/
+    - assets/gch_pics/gch_nav/
+
+flutter_gen:
+  output: lib/gch_gen/
+  integrations:
+    flutter_svg: true
+
+flutter_native_splash:
+  color: "#D4D6FE"
+  image: assets/gch_pics/gch_brand/gch_d9fbeb.png
+  ios: true
+  ios_content_mode: center
+  fullscreen: true
+
+flutter_launcher_icons:
+  ios: true
+  image_path: "assets/gch_pics/gch_brand/gch_d9fbeb.png"
+  remove_alpha_ios: true

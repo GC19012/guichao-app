@@ -1,0 +1,12 @@
+//
+//  Base.xcconfig
+//  Runner
+//
+//  Copyright © 2026 HK Guichao Technology Co., Ltd.
+//
+
+#include "Flutter/Generated.xcconfig"
+
+BASE_BUNDLE_IDENTIFIER=com.example.app
+SERVICE_IDENTIFIER=com.example.app
+DEVELOPMENT_TEAM=YOUR_TEAM_ID
